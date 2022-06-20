@@ -1,0 +1,9 @@
+mutation CreateTodo($data: TodoInput!) {
+  createTodo(data: $data) {
+    data {
+      attributes {
+        title: title
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+query GetTodos {
+  todos(pagination: { limit: 100 }) {
+    data {
+      id
+      attributes {
+        title
+        status
+      }
+    }
+  }
+}

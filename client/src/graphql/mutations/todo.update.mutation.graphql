@@ -1,0 +1,10 @@
+mutation UpdateTodo($data: TodoInput!, $id: ID!) {
+  updateTodo(data: $data, id: $id) {
+    data {
+      attributes {
+        status: status
+        title: title
+      }
+    }
+  }
+}
